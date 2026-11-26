@@ -1,0 +1,58 @@
+{
+  "name": "MSFT Equity Collar",
+  "valuation_date": "2026-11-25",
+  "spot": 489.93,
+  "source": "Optionistics / HistoricalOptionData",
+  "currency": "USD",
+  "contract_size": 100,
+  "notes": "Historical demonstration snapshot, not a trading recommendation. Option prices are per share. Entry is the bid/ask midpoint. 100 shares against 1 contract.",
+  "legs": [
+    {
+      "ticker": "MSFT",
+      "kind": "S",
+      "qty": 100,
+      "side": 1,
+      "entry": 489.93,
+      "last": 489.93
+    },
+    {
+      "ticker": "MSFT",
+      "kind": "P",
+      "strike": 515.0,
+      "expiry": "2027-02-19",
+      "qty": 1,
+      "side": 1,
+      "entry": 44.625,
+      "bid": 43.35,
+      "ask": 45.9,
+      "last": 44.3,
+      "iv": 34.22,
+      "volume": 6,
+      "oi": 467,
+      "delta": -0.5705
+    },
+    {
+      "ticker": "MSFT",
+      "kind": "C",
+      "strike": 540.0,
+      "expiry": "2027-02-19",
+      "qty": 1,
+      "side": -1,
+      "entry": 15.35,
+      "bid": 14.1,
+      "ask": 16.6,
+      "last": 14.97,
+      "iv": 32.65,
+      "volume": 122,
+      "oi": 1806,
+      "delta": 0.3217
+    }
+  ],
+  "view": {
+    "range": 12,
+    "iv": 100,
+    "days": 0,
+    "center_spot": true
+  }
+}
+

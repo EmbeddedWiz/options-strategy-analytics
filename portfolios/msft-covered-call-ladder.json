@@ -1,0 +1,58 @@
+{
+  "name": "MSFT Covered Call Ladder",
+  "valuation_date": "2026-11-25",
+  "spot": 489.93,
+  "source": "Optionistics / HistoricalOptionData",
+  "currency": "USD",
+  "contract_size": 100,
+  "notes": "Historical demonstration snapshot, not a trading recommendation. Option prices are per share. Entry is the bid/ask midpoint. 200 shares overwritten in two tranches of 1 contract.",
+  "legs": [
+    {
+      "ticker": "MSFT",
+      "kind": "S",
+      "qty": 200,
+      "side": 1,
+      "entry": 489.93,
+      "last": 489.93
+    },
+    {
+      "ticker": "MSFT",
+      "kind": "C",
+      "strike": 500.0,
+      "expiry": "2026-12-24",
+      "qty": 1,
+      "side": -1,
+      "entry": 15.25,
+      "bid": 14.4,
+      "ask": 16.1,
+      "last": 15.5,
+      "iv": 34.58,
+      "volume": 48,
+      "oi": 115,
+      "delta": 0.4541
+    },
+    {
+      "ticker": "MSFT",
+      "kind": "C",
+      "strike": 550.0,
+      "expiry": "2027-01-15",
+      "qty": 1,
+      "side": -1,
+      "entry": 5.0,
+      "bid": 4.75,
+      "ask": 5.25,
+      "last": 5.04,
+      "iv": 29.75,
+      "volume": 1003,
+      "oi": 13932,
+      "delta": 0.1796
+    }
+  ],
+  "view": {
+    "range": 14,
+    "iv": 100,
+    "days": 0,
+    "center_spot": true
+  }
+}
+

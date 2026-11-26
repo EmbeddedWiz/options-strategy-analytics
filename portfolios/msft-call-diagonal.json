@@ -1,0 +1,50 @@
+{
+  "name": "MSFT Call Diagonal",
+  "valuation_date": "2026-11-25",
+  "spot": 489.93,
+  "source": "Optionistics / HistoricalOptionData",
+  "currency": "USD",
+  "contract_size": 100,
+  "notes": "Historical demonstration snapshot, not a trading recommendation. Option prices are per share. Entry is the bid/ask midpoint. 1:1 diagonal, 1 contract each leg.",
+  "legs": [
+    {
+      "ticker": "MSFT",
+      "kind": "C",
+      "strike": 540.0,
+      "expiry": "2027-02-19",
+      "qty": 1,
+      "side": 1,
+      "entry": 15.35,
+      "bid": 14.1,
+      "ask": 16.6,
+      "last": 14.97,
+      "iv": 32.65,
+      "volume": 122,
+      "oi": 1806,
+      "delta": 0.3217
+    },
+    {
+      "ticker": "MSFT",
+      "kind": "C",
+      "strike": 500.0,
+      "expiry": "2026-12-24",
+      "qty": 1,
+      "side": -1,
+      "entry": 15.25,
+      "bid": 14.4,
+      "ask": 16.1,
+      "last": 15.5,
+      "iv": 34.58,
+      "volume": 48,
+      "oi": 115,
+      "delta": 0.4541
+    }
+  ],
+  "view": {
+    "range": 28,
+    "iv": 100,
+    "days": 0,
+    "center_spot": true
+  }
+}
+
